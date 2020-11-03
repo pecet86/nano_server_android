@@ -1,0 +1,3 @@
+include ':nano-android-server'
+include ':app'
+rootProject.name = "Namo Server Android"
