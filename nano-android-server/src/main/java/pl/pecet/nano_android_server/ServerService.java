@@ -11,12 +11,14 @@ import androidx.annotation.RequiresApi;
 
 import java.io.IOException;
 
+import fi.iki.elonen.blue_points.RouterNanoHTTPD;
+
 public abstract class ServerService extends BaseService {
 
     public static final String MODE_START_SERVER = "START_SERVER";
     public static final String MODE_STOP_SERVER = "STOP_SERVER";
 
-    private NanoAndroidServer server;
+    private RouterNanoHTTPD server;
 
     @Override
     public void onCreate() {
@@ -59,7 +61,7 @@ public abstract class ServerService extends BaseService {
     }
 
     @NonNull
-    protected abstract NanoAndroidServer createServer();
+    protected abstract RouterNanoHTTPD createServer();
 
     private void startServer() {
         log("startServer", "init");

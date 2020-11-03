@@ -16,7 +16,7 @@
         android:theme="@style/Theme.NamoServerAndroid">
 
         <service
-            android:name=".ServerServiceImpl"
+            android:name=".backend.ServerServiceImpl"
             android:exported="false" />
 
         <activity android:name=".MainActivity">

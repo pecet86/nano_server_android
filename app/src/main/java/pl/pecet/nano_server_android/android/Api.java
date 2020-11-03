@@ -1,4 +1,4 @@
-package pl.pecet.nano_server_android.api;
+package pl.pecet.nano_server_android.android;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

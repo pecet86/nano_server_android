@@ -1,4 +1,4 @@
-package pl.pecet.nano_server_android.api;
+package pl.pecet.nano_server_android.android;
 
 import android.content.Context;
 import android.util.Log;
@@ -35,8 +35,7 @@ public class ApiService {
 
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
-        httpClient.addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
-        );
+        httpClient.addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY));
 
 
         Retrofit retrofit2 = new Retrofit
@@ -94,7 +93,7 @@ public class ApiService {
     public JsonObject getTestSync() throws IOException {
         Call<JsonObject> call = apiService.getTest(
                 "xxx",
-                "name",
+                "nazwa",
                 "qqq",
                 10
         );
@@ -126,7 +125,7 @@ public class ApiService {
 
         Call<JsonObject> call = apiService.postTest(
                 "xxx",
-                "name",
+                "nazwa",
                 "qqq",
                 10,
                 body

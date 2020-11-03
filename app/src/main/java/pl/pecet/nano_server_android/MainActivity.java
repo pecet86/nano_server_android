@@ -13,7 +13,8 @@ import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Completable;
 import io.reactivex.schedulers.Schedulers;
-import pl.pecet.nano_server_android.api.ApiService;
+import pl.pecet.nano_server_android.android.ApiService;
+import pl.pecet.nano_server_android.backend.ServerServiceImpl;
 
 public class MainActivity extends AppCompatActivity {
 
